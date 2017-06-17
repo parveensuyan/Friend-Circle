@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3c4630</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mysendback">#87b5d79e</color>
+    <color name="mylistback">#28a3f7e9</color>
+    <color name="myrecieveback">#5672a7f7</color>
+    <color name="backtoolbar">#e9094891</color>
+</resources>

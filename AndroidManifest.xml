@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="people.chat.mywhatsapp">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".All_contact_activity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChatActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Settings_activity" />
+        <activity
+            android:name=".Chat_list_Activity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Status_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Broadcast_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Important_msg_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Enter_your_number" />
+        <activity android:name=".Confirmation_page" />
+        <activity android:name=".Splash_activity" />
+        <activity android:name=".Enter_your_name_other" />
+        <activity android:name=".TypeStatus" />
+        <activity
+            android:name=".Contact_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".backgroud_service"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

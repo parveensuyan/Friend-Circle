@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+android:clickable="true"
+
+
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/Widget.AppCompat.EditText.recieve"
+    android:layout_marginTop="10dp"
+    android:paddingTop="15dp"
+    android:layout_marginRight="50dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:background="@drawable/bubblee_b">
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="I am fine thank you"
+        android:textIsSelectable="true"
+        android:id="@+id/recieve_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+
+
+android:textColor="#cf4a7ab6"
+        android:id="@+id/time_recieve"
+        android:layout_below="@+id/recieve_text"
+         />
+</RelativeLayout>
+</RelativeLayout>

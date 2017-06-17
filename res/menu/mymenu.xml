@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <item  android:title="Contacts" android:id="@+id/all_contacts" android:icon="@drawable/all_friends" app:showAsAction="ifRoom"/>
+    <item android:title="New broadcast" android:id="@+id/broadcast_menu"/>
+ <item android:title="Important Message" android:id="@+id/important_messages_menu"/>
+    <item android:title="Status" android:id="@+id/status_menu"/>
+    <item android:title="Settings" android:id="@+id/settings_menu"/>
+
+</menu>

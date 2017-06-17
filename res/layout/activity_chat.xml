@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context="people.chat.mywhatsapp.ChatActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+       >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/backtoolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="50dp"
+    android:layout_height="38dp"
+  >
+<Button
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+
+                android:id="@+id/back_btn"
+
+               android:layout_gravity="right"
+                android:background="@drawable/back_btn" />
+</LinearLayout>
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="3dp"
+                    android:src="@drawable/dp2"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:animationCache="true"
+
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:id="@+id/name_tying"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contact_name"
+                        android:textSize="16sp"
+                        android:maxLength="20"
+
+                        android:text="Name"/>
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textColor="#fb38ead6" />
+
+
+                </LinearLayout>
+<Button
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/camera"
+    android:gravity="right"
+    android:visibility="invisible" />
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_chat" />
+
+</android.support.design.widget.CoordinatorLayout>

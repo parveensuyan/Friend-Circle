@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+android:clickable="true"
+
+    android:headerDividersEnabled="false"
+    android:footerDividersEnabled="false"
+
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/Widget.AppCompat.EditText.send"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bubblee_a"
+    android:paddingBottom="20dp"
+    android:layout_marginLeft="50dp"
+    android:paddingTop="10dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="hello how are you?"
+        android:textIsSelectable="true"
+        android:id="@+id/send_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:gravity="left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginLeft="50dp"
+
+        android:textColor="#ffffff"
+        android:id="@+id/time_send"
+        android:layout_below="@+id/send_text"
+        android:visibility="visible"
+        android:text="Sending..." />
+
+
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/dp_list"
+        android:adjustViewBounds="false"
+
+        android:layout_marginLeft="5dp"
+
+        android:src="@drawable/dp2"
+        android:layout_alignTop="@+id/name_list"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="AMARJIT SINGH"
+        android:id="@+id/name_list"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/dp_list"
+        android:layout_toEndOf="@+id/dp_list"
+        android:maxLength="35"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="No status"
+        android:id="@+id/last_msg_list"
+        android:textStyle="italic"
+        android:maxLength="20"
+        android:textSize="13sp"
+        android:layout_alignTop="@+id/mymute"
+        android:layout_alignLeft="@+id/name_list"
+        android:layout_alignStart="@+id/name_list" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/last_msg_time"
+        android:text="10:53 AM"
+        android:layout_alignTop="@+id/online"
+        android:layout_toLeftOf="@+id/unread_msg"
+        android:layout_toStartOf="@+id/unread_msg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="111"
+        android:background="@drawable/unread_back"
+        android:id="@+id/unread_msg"
+        android:layout_marginRight="21dp"
+        android:padding="10dp"
+        android:layout_marginEnd="21dp"
+        android:visibility="visible"
+        android:maxLength="3"
+        android:textSize="10sp"
+        android:layout_alignBottom="@+id/dp_list"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/online"
+        android:src="@android:drawable/presence_online"
+        android:layout_alignTop="@+id/name_list"
+        android:layout_alignRight="@+id/unread_msg"
+        android:layout_alignEnd="@+id/unread_msg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mymute"
+        android:src="@android:drawable/ic_lock_silent_mode"
+        android:layout_alignTop="@+id/unread_msg"
+        android:layout_toLeftOf="@+id/unread_msg"
+        android:layout_toStartOf="@+id/unread_msg"
+        android:visibility="invisible" />
+</RelativeLayout>
